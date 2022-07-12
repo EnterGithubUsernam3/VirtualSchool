@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="Assets\Images\info-button.png" type="image/png">
+    <link rel="stylesheet" href="css\style.css" type = "text/css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Students</title>
+</head>
+<body >
+
+    <div class="container">
+        <nav id="top">
+            <ul>
+                <li id="hom3">
+                    <a href="./index.html">
+                    Back To Homepage 
+                    </a>
+                    </li>
+                <li>
+                       
+                        Students 
+                        <ul>
+                            
+                            <li>
+                                    <a href="./addStudentForm.html">
+                                    Add students 
+                                </a>
+                                </li>
+                            <li>
+                                <a href="./editStudentForm.html">
+
+                                    Edit students
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="./addAssignmentPerStudent.html">
+
+                                    Add assignments per student
+                                </a>
+                            </li> </ul> </li>
+                        </a>
+                            <li>
+                                Trainers 
+                                <ul>
+                                    <li>
+                                        <a href="./addTrainerForm.html">
+
+                                            Add trainers
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./editTrainerForm.html">
+
+                                            Edit trainers
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                Courses
+                                <ul>
+                                    <li>
+                                        <a href="./addCoursesForm.html">
+
+                                            Add courses
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./editCoursesForm.html">
+
+                                            Edit courses
+                                        </a>
+                                    </li>
+                                    <li><a href="./addElementPerCourse.html">
+
+                                        Add elements per course</li>
+                                    </a>
+                                   
+                                </li>
+                                <li><a href="./editElementsPerCouse.html">
+
+                                    Edit elements per course</li>
+                                </a>
+                               
+                            </li>
+                                </ul>
+
+                            <li>
+                                Assignments
+                                <ul>
+                                   <li>
+                                       <a href="./addAssignmentsForm.html">
+                                           Add assignments
+                                        </a>
+                                        </li>
+
+                                           <li>
+                                    <a href="./editAssignmentForm.html">
+
+                                        Edit assignments
+                                    </a>        
+                                </li> 
+                                </ul>
+                            </li>
+                     </ul>
+        <img src="Assets\Images\logo.png" alt="Logo of the site " id="logoOftheSite">
+        </nav>   
+        </div>
+  
+        <!-- <h1>Edit students form</h1> -->
+
+    <div class="formContainer">
+        <div id="editImagePortion">
+
+            <div id="editTheWholeShebbang">
+                <p id="studentList"></p>
+                <div id="studentInformation">
+                    <p><input  type="text" disabled id="printFirstName" class="displayInputs"></p>
+                    <p><input  type="text" disabled id="printLastName"class="displayInputs" ></p>
+                    <p><input  type="text" disabled id="printDateOfBirth" class="displayInputs" ></p>
+                    <p><input  type="text" disabled id="printTuitions" class="displayInputs"></p>
+                </div>
+                <form id="enterStudents" >
+                    <p><input type="text" name="FirstName" id="fnameE" placeholder="Please enter the student's first name" required ></p>
+                    <p><input type="text" name="LastName" id="lnameE" placeholder="Please enter the student's last name" required></p>
+                    <!-- Validation that the student will be at least 18 years of age -->
+                    <p><label >Please enter the student's date of birth<input type="date" name="Dobirth" id="dobE" required max="2002-01-01">
+                    </label></p>
+                    <p><input type="number" name="Tuitios" id="tuitE" placeholder="Please enter the expected tuitions from this student" min="0" max="200"></p>
+                    <p>
+                        <input type="reset" id = "clearEdit" value="Clear">
+                        
+                    </form>
+                    <input type="submit" value="Edit Student" id="enterStudentE" onclick="submitEdditedStudent()" >
+                    <button id="deleteStudent" onclick="deleteStudent()">Delete Student</button>
+                    
+                </div>
+            </div>
+                <!-- <button id="saveStudent" onclick="saveStudentArray(retrievedArray,retrievedCoursesArray)">Edit Student</button> -->
+            </div>
+    <script src="js\editStudentForm.js"></script>
+    
+
+    <footer>
+        <p id="copyright">&copy;Vassilis Mourloukos 2021 </p>
+    </footer>
+    
+    <!-- <script src="js\navigationFuncAndAddForms.js"></script> -->
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="Assets\Images\info-button.png" type="image/png">
+    <link rel="stylesheet" href="css\style.css" type = "text/css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Input Form</title>
+</head>
+<body>
+    <div class="container">
+        <nav id="top">
+            <ul>
+                <li id="hom3">
+                    <a href="#" onclick="openHomePage()">
+                    Back To Homepage 
+                    </a>
+                    </li>
+                <li>
+                       
+                        Students 
+                        <ul>
+                            
+                            <li>
+                                    <a href="./addStudentForm.html">
+                                    Add students 
+                                </a>
+                                </li>
+                            <li>
+                                <a href="./editStudentForm.html">
+
+                                    Edit students
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="./addAssignmentPerStudent.html">
+
+                                    Add assignments per student
+                                </a>
+                            </li> </ul> </li>
+                        </a>
+                            <li>
+                                Trainers 
+                                <ul>
+                                    <li>
+                                        <a href="./addTrainerForm.html">
+
+                                            Add trainers
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./editTrainerForm.html">
+
+                                            Edit trainers
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                Courses
+                                <ul>
+                                    <li>
+                                        <a href="./addCoursesForm.html">
+
+                                            Add courses
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./editCoursesForm.html">
+
+                                            Edit courses
+                                        </a>
+                                    </li>
+                                    <li><a href="./addElementPerCourse.html">
+
+                                        Add elements per course</li>
+                                    </a>
+                                   
+                                </li>
+                                <li><a href="./editElementsPerCouse.html">
+
+                                    Edit elements per course</li>
+                                </a>
+                               
+                            </li>
+                                </ul>
+
+                            <li>
+                                Assignments
+                                <ul>
+                                   <li>
+                                       <a href="./addAssignmentsForm.html">
+                                           Add assignments
+                                        </a>
+                                        </li>
+
+                                           <li>
+                                    <a href="./editAssignmentForm.html">
+
+                                        Edit assignments
+                                    </a>        
+                                </li> 
+                                </ul>
+                            </li>
+                     </ul>
+        <img src="Assets\Images\logo.png" alt="Logo of the site " id="logoOftheSite">
+        </nav>   
+    </div>  
+    <div class = "theformscontainers">
+        <form id="enterStudents" >
+                    <h1 id="headerStudent">Add students form</h1>
+                    <input type="text" name="FirstName" class="inputs" id="fname" placeholder="Please enter the student's first name" required>
+                    <input type="text" name="LastName" class="inputs" id="lname" placeholder="Please enter the student's last name" required>
+                    <!-- Validation that the student will be at least 18 years of age -->
+                    <label id="ldob" >Please enter the student's date of birth<input type="date" class="inputs" id="dob" name="Dobirth"  required max="2002-01-01">
+                    </label>
+                    <p><input type="number" name="Tuitions" class="inputs" id="tuit" placeholder="Please enter the expected tuitions from this student" min="0" max="200"></p>
+                    <p id="buttonsS">
+                        <input type="submit" value="Submit" id="enterStudent" onclick="submitStudent()" >
+                        <button id="saveStudent" onclick="saveStudentArray(arrayOfStudents)">Save Student</button>
+                        <input type="reset" id="clearSForm" value="Clear"></p>
+                        
+                    </form>
+                    
+                </div>
+    <footer>
+        <p id="copyright">&copy;Vassilis Mourloukos 2021 </p>
+    </footer>
+        
+    
+</body>
+<script src="js\navigationFuncAndAddForms.js"></script>
+</html>

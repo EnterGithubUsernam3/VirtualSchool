@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="Assets\Images\info-button.png" type="image/png">
+    <link rel="stylesheet" href="css\style.css" type = "text/css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add element per course</title>
+</head>
+<body id="addElePerBody">
+    <div class="container">
+        <nav id="top">
+            <ul>
+                <li id="hom3">
+                    <a href="./index.html">
+                    Back To Homepage 
+                    </a>
+                    </li>
+                <li>
+                       
+                        Students 
+                        <ul>
+                            
+                            <li>
+                                    <a href="./addStudentForm.html">
+                                    Add students 
+                                </a>
+                                </li>
+                            <li>
+                                <a href="./editStudentForm.html">
+
+                                    Edit students
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="./addAssignmentPerStudent.html">
+
+                                    Add assignments per student
+                                </a>
+                            </li> </ul> </li>
+                        </a>
+                            <li>
+                                Trainers 
+                                <ul>
+                                    <li>
+                                        <a href="./addTrainerForm.html">
+
+                                            Add trainers
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./editTrainerForm.html">
+
+                                            Edit trainers
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                Courses
+                                <ul>
+                                    <li>
+                                        <a href="./addCoursesForm.html">
+
+                                            Add courses
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./editCoursesForm.html">
+
+                                            Edit courses
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./addElementPerCourse.html">
+
+                                        Add elements per course
+                                    </a>
+                                </li>
+                                    <li>
+                                        <a href="./editElementsPerCouse.html">
+
+                                        Edit elements per course
+                                    </a>
+                                </li>
+                                    
+                            </ul>
+                        </li>
+                            
+                            <li>
+                                Assignments
+                                <ul>
+                                   <li>
+                                       <a href="./addAssignmentsForm.html">
+                                           Add assignments
+                                        </a>
+                                        </li>
+
+                                           <li>
+                                    <a href="./editAssignmentForm.html">
+
+                                        Edit assignments
+                                    </a>        
+                                </li> 
+                                </ul>
+                            </li>
+                     </ul>
+        <img src="Assets\Images\logo.png" alt="Logo of the site " id="logoOftheSite">
+        </nav>           
+        </div> 
+<div class="container">
+    <!-- <div class="tags">
+        <p>Courses in the database:</p>
+        <p>Students in the database:</p>
+        <p>Trainers in the database:</p>
+        <p id="assiavailable">Assignments available: </p>   
+    </div> -->
+    <div class="lists">
+        <p id="coursesList"></p>
+        <p id="studentsList"></p>
+        <p id="trainersList"></p>
+        <p id="assignmentsList"></p>
+    </div>
+    
+</div>
+<div class="container">
+    <div id="printTheElemets"></div>
+    <div id="printAssiPerStudent"></div>
+    <!-- <p>Trainers per course</p>
+    <p id="trainerPerCoursePrint"></p>
+    <p>Students per course</p>
+    <p id="studentPerCoursePrint"></p>
+    <p>Assignment per course</p>
+    <p id="studentPerCoursePrint"></p> -->
+    
+
+</div>
+<!-- <div id="Io"> -->
+
+    <button id="SubmitelementsPerCourse" onclick="createCompositeCourse()">Add Elements per course</button>
+    <button id="printTheElements" onclick="printInfoAboutCourse()">Print all the courses</button>
+<!-- </div> -->
+<!-- <button id="saveChanges" onclick="saveCourseArray(retrievedCoursesArray)">Save changes</button> -->
+</body>
+
+<footer>
+    <p id="copyright">&copy;Vassilis Mourloukos 2021 </p>
+</footer>
+
+<script src="js\addElementsPerCourse.js"></script>
+<!-- <script src="js\navigationFuncAndAddForms.js"></script> -->
+
+</html>

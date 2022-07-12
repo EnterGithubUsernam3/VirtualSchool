@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="Assets\Images\info-button.png" type="image/png">
+    <link rel="stylesheet" href="css\style.css" type = "text/css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Trainers Form</title>
+</head>
+    <body>
+        <div class="container">
+            <nav id="top">
+                <ul>
+                    <li id="hom3">
+                    <a href="./index.html">
+                    Back To Homepage 
+                    </a>
+                    </li>
+                    <li>
+                           
+                            Students 
+                            <ul>
+                                
+                                <li>
+                                        <a href="./addStudentForm.html">
+                                        Add students 
+                                    </a>
+                                    </li>
+                                <li>
+                                    <a href="./editStudentForm.html">
+    
+                                        Edit students
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="./addAssignmentPerStudent.html">
+    
+                                        Add assignments per student
+                                    </a>
+                                </li> </ul> </li>
+                            </a>
+                                <li>
+                                    Trainers 
+                                    <ul>
+                                        <li>
+                                            <a href="./addTrainerForm.html">
+    
+                                                Add trainers
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./editTrainerForm.html">
+    
+                                                Edit trainers
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Courses
+                                    <ul>
+                                        <li>
+                                            <a href="./addCoursesForm.html">
+    
+                                                Add courses
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./editCoursesForm.html">
+    
+                                                Edit courses
+                                            </a>
+                                        </li>
+                                        <li><a href="./addElementPerCourse.html">
+    
+                                            Add elements per course</li>
+                                        </a>
+                                       
+                                    </li>
+                                    <li><a href="./editElementsPerCouse.html">
+    
+                                        Edit elements per course</li>
+                                    </a>
+                                   
+                                </li>
+                                    </ul>
+    
+                                <li>
+                                    Assignments
+                                    <ul>
+                                       <li>
+                                           <a href="./addAssignmentsForm.html">
+                                               Add assignments
+                                            </a>
+                                            </li>
+    
+                                               <li>
+                                        <a href="./editAssignmentForm.html">
+    
+                                            Edit assignments
+                                        </a>        
+                                    </li> 
+                                    </ul>
+                                </li>
+                         </ul>
+            <img src="Assets\Images\logo.png" alt="Logo of the site " id="logoOftheSite">
+            </nav>   
+            </div>
+      
+    
+        <div class="formContainer" >
+        <p id="trainerList"></p>
+        <div id="trainerInformation">
+            <p class="displayInputs"><input  type="text" disabled id="printFirstNameTrainer"  ></p>
+            <p class="displayInputs"><input  type="text" disabled id="printLastNameTrainer" ></p>
+            <p class="displayInputs"><input  type="text" disabled id="printTrainerSubjects" ></p>
+                </div>
+            <form id="enterTrainers" >
+            <p><input type="text" name="FirstNameT" id="fnameTrainer" placeholder="Please enter the trainer's first name" required ></p>
+            <p><input type="text" name="LastNameT" id="lnameTrainer" placeholder="Please enter the trainer's last name" required></p>
+            <p>   
+                <select name="subjects" id="subjectsSelection"  size="6" ">
+                    <option value="none" selected disabled hidden>Select a Subject</option>
+                    <option value="Front End Development">Front End Development</option>
+                    <option value="Back End Development">Back End Development</option>
+                    <option value="Full Stack Development">Full Stack Development</option>
+                    <option value="Computer Science">Computer Science</option>
+                    <option value="Databases">Databases</option>
+                    <option value="Operating">Operating Systems</option>
+                </select>
+            </p>
+            <p>
+                <input type="reset" value="Clear">
+                
+            </form>
+            <input type="submit" value="Submit" id="editTrainer" onclick="submitEdditedTrainer()" >
+            <button id="deleteTrainer" onclick="deleteTrainer()">Delete Trainer</button>
+            
+        <!-- <button id="saveTrainer" onclick="saveTrainerArray(retrievedTrainersArray)">Edit Trainer</button> -->
+    </div>
+        <script src="js\editTrainerForm.js"></script>
+        
+
+        <footer>
+            <p id="copyright">&copy;Vassilis Mourloukos 2021 </p>
+        </footer>
+        
+        <!-- <script src="js\navigationFuncAndAddForms.js"></script> -->
+    
+    </body>
+    </html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="Assets\Images\info-button.png" type="image/png">
+    <link rel="stylesheet" href="css\style.css" type = "text/css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add courses</title>
+</head>
+<body>
+    <div class="container">
+        <nav id="top">
+            <ul>
+                <li id="hom3">
+                    <a href="#" onclick="openHomePage()">
+                    Back To Homepage 
+                    </a>
+                    </li>
+                <li>
+                       
+                        Students 
+                        <ul>
+                            
+                            <li>
+                                    <a href="./addStudentForm.html">
+                                    Add students 
+                                </a>
+                                </li>
+                            <li>
+                                <a href="./editStudentForm.html">
+
+                                    Edit students
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="./addAssignmentPerStudent.html">
+
+                                    Add assignments per student
+                                </a>
+                            </li> </ul> </li>
+                        </a>
+                            <li>
+                                Trainers 
+                                <ul>
+                                    <li>
+                                        <a href="./addTrainerForm.html">
+
+                                            Add trainers
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./editTrainerForm.html">
+
+                                            Edit trainers
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                Courses
+                                <ul>
+                                    <li>
+                                        <a href="./addCoursesForm.html">
+
+                                            Add courses
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./editCoursesForm.html">
+
+                                            Edit courses
+                                        </a>
+                                    </li>
+                                    <li><a href="./addElementPerCourse.html">
+
+                                        Add elements per course</li>
+                                    </a>
+                                   
+                                </li>
+                                <li><a href="./editElementsPerCouse.html">
+
+                                    Edit elements per course</li>
+                                </a>
+                               
+                            </li>
+                                </ul>
+
+                            <li>
+                                Assignments
+                                <ul>
+                                   <li>
+                                       <a href="./addAssignmentsForm.html">
+                                           Add assignments
+                                        </a>
+                                        </li>
+
+                                           <li>
+                                    <a href="./editAssignmentForm.html">
+
+                                        Edit assignments
+                                    </a>        
+                                </li> 
+                                </ul>
+                            </li>
+                     </ul>
+        <img src="Assets\Images\logo.png" alt="Logo of the site " id="logoOftheSite">
+        </nav>   
+        </div>
+
+<div id="enterPictureForCourse">
+
+    <form id="enterCourses" >
+        <h1 id="titleCourses" > Enter courses form</h1>
+        <p><input type="text" name="title" id="cTitle" class="addCourse" required placeholder="Please enter the course's title"  ></p>
+        <p><select name="languages" id="cSource" class="addCourse" required>
+            <option value="none" selected disabled hidden>Select a Language</option>
+            <option value="Java">Java</option>
+            <option value="Javascript">Javascript</option>
+            <option value="Python">Python</option>
+            <option value="C++">C++</option>
+            <option value="C#">C#</option>
+            <option value="Php">Php</option>
+            
+        </select></p>
+        <p><select name="hours" id="cType" class="addCourse"  required>
+            <option value="none" selected disabled hidden>Schedule Selection</option>
+            <option value="Fulltime">Fulltime</option>
+            <option value="Parttime">Parttime</option>
+            
+        </select></p>
+        <p><label id="cStartLabel" >Please enter the start date of the course: <input type="date" name="StartDate" id="cStartDate" min="01-01-2021"  required></label></p>
+            
+            <p><label ID = "cEndLabel" >Please enter the end date of the course: <input type="date" name="EndDate" id="cEndDate"   required></label>
+            </p>
+            
+            <input type="submit" value="Submit" id="enterCourse" onclick="submitCourse()" >
+            <input type="reset" value="Clear">
+            
+        </form>
+        
+        <button id="saveCourse" onclick="saveCourseArray(arrayOfCourses)">Save Course</button>
+    </div>
+        <footer>
+        <p id="copyright">&copy;Vassilis Mourloukos 2021 </p>
+    </footer>
+    
+    <script src="js\navigationFuncAndAddForms.js"></script>
+</body>
+</html>

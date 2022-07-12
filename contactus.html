@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="Assets\Images\books.png" type="image/png">
+    <link rel="stylesheet" href="css\style.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+<body>
+    <div class="container">
+        <nav id="top">
+            <ul>
+                <a href="#" onclick="openHomePage()"><li id="hom3">
+                   Homepage 
+                </li></a>
+                <a href="#" onclick="openAboutUs()"><li id="abtus">
+                   Who we are  
+                </li></a>
+                <a href="#" onclick="openContactUs()"><li id="cntct">
+                    Contact Us 
+                </li></a>
+                <a href="#" onclick="openAdminpage()"><li id="adm">
+                    Administration Page
+                 </li></a>
+                
+    
+            </ul>
+            <img src="Assets\Images\logo.png" alt="Logo of the site " id="logoOftheSite">
+        </nav>
+    </div>
+    
+        <div id="formcontainer">
+                <form >
+                <p> <input class="boxes" type="text" placeholder="Enter your first name" required></p>
+                    <p><input type="text " class="boxes" placeholder="Enter your last name" required></p>
+                    <p> <input type="email" class="boxes" placeholder="youremail@mailservice.com" required></p>
+                    <p><textarea  id="textBox" cols="30" rows="15" placeholder="Please write the reason for contacting us bellow ">
+                    </textarea>
+                    <p id="buttons">
+                        <input id="sub" type="submit" value="Submit">
+                        <input id="cnc" type="reset" value="Clear">
+                    </p>
+                </form>
+    </div>
+    <footer>
+        <p id="copyright">&copy;Vassilis Mourloukos 2021 </p>
+    </footer>
+    <script src="./js/navigationFuncAndAddForms.js"></script>
+</body>
+</html>

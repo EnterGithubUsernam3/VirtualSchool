@@ -1,0 +1,797 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1920px; /*Η ανάλυση που έχουν οι περισσότερες οθόνες*/
+}
+
+.container #top {
+    align-self:center;
+    height: 50px;
+    
+    background-color: #243473;
+    margin-bottom: 15px;
+}
+/* .container #top ul {
+    margin-left: 800px;
+} */
+
+.container #top ul li ul {
+    visibility: hidden;
+}
+.container #top ul  li{
+    list-style: none;
+    float: left;
+    color: whitesmoke;
+    width:10%;
+    margin-left: 45px;
+    margin-right: 45px;
+    text-align: center;
+    line-height: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: medium;
+    
+    
+}
+.container #top ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    display: block;
+    line-height: 50px;
+    text-align: center;
+}
+
+.container #top ul li ul li{
+    width:100%;
+    background-color: #243473;
+    line-height: 10px;
+    text-align:center;
+    position:relative;
+    left:20px
+}
+.container #top ul li a:hover {
+    background-color: rgb(138, 202, 255);
+    color: black;
+
+}
+.container #top ul li:hover ul {
+    visibility: visible;
+    position:relative;
+    background-color: #243473;
+    color: whitesmoke;
+    right: 75px;
+
+}
+.container #theimageportion {
+    height: 1400px;
+}
+.container #theimageportion {
+    
+    background-size: cover;
+    background-image: url(../Assets/Images/backgroundimg.jpg);
+    
+}
+#box {
+    height: 930px;
+    width: 300px;
+    background-color:#24347391 ;
+    position: relative;
+    top: 250px;
+    right: 650px;
+    
+    overflow: hidden;
+    
+
+}
+#indexp{
+    text-align:center;
+    line-height: 25px;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: small;
+    
+}
+#button{
+    width: 100px;
+    height: 25px;
+    position: absolute;
+    background-color: #243473;
+    right: 150px;
+    bottom: 5px;
+    border-radius: 5px;
+}
+#button>a> p:hover {
+    background-color:rgb(138, 202, 255);
+    color: black;
+    
+
+}
+#button a {
+    text-decoration: none;
+}
+.container #aboutus{
+    
+    text-align:inherit ;
+    background-image: url("../Assets/Images/SL-043021-42650-26.jpg");
+    
+    
+    
+    
+    
+}
+.container #aboutus p{
+    color: rgb(161, 130, 130);
+    text-size-adjust:initial;
+    line-height: 25px;
+    width: 600px;
+}
+ #formcontainer{
+    width: 1900px;
+    background-color: #949AAC;
+    
+    border: 4px solid #7284A7;
+    border-radius: 15px;
+}
+#formcontainer .boxes{
+    width: 1400px;
+    height: 35px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+#textBox{
+    margin-top: 10px;
+    width: 1400px;
+    height: 500px;
+    position: relative;
+    left: 13%;
+}
+#buttons{
+    margin-bottom: 5px;
+    text-align: center;
+    
+}
+#formcontainer form #buttons #sub{
+    background-color: rgb(34, 138, 34);
+    color: whitesmoke;
+    border-radius: 3px;
+    height: 35px;
+    width:90px;
+}
+#formcontainer form #buttons #cnc{
+    background-color: tomato;
+    color: whitesmoke;
+    border-radius: 3px;
+    height: 35px;
+    width:90px;
+}
+.boxes{
+    position: relative;
+    left: 13%;
+}
+
+div img {
+    width:45px;
+    height: 45px;
+}
+#foot{
+    margin-top: 10px;
+    margin-left:890px;
+}
+footer{
+    margin-top: 15px;
+    height: 150px;
+    background-color: rgb(47, 46, 46);
+    color: honeydew;
+    text-align: center;
+    max-width: 1920px;
+    
+}
+footer #copyright {
+    position: relative;
+    top: 75px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: medium;
+    text-align: center;
+}
+ul li ul {
+    visibility: hidden;
+}
+
+
+#logoOftheSite{
+    position: absolute;
+    right: 50px;
+    height: 50px;
+    width: 75px;
+    
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+#tableOfInformation{
+    border: 1px solid black;
+}
+#tableOfInformation th{
+    padding-left: 55px;
+    padding-right: 55px;
+    border: 1px solid black;
+}
+    
+
+#tableOfInformation td{
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-top:25px ;
+    padding-bottom:25px ;
+    border: 1px solid black;
+}
+
+#tableComplex {
+    border : 1px solid black;
+}
+
+#tableComplex th{
+    padding-left: 55px;
+    padding-right: 55px;
+    border: 1px solid black;
+}
+
+#tableComplex  td{
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-top:25px ;
+    padding-bottom:25px ;
+    border: 1px solid black;
+}
+
+#tableComplex  td ul {
+    list-style:circle;
+}
+
+#seperator{
+    margin: 10px 0px 10px 0px ;
+}
+#contents {
+    height: 800px;
+  
+    margin-top: 3%;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    align-content: center;
+}
+
+#selectorEle{
+    position: relative;
+    right:40%;
+}
+#printInfo{
+    margin-top: 20px;
+    position: relative;
+}
+#copyright {
+    position :relative;
+    align-self: center;
+    text-align: center;
+    align-content: center;
+    /* margin-bottom: 20px; */
+}
+
+#contentsE {
+    height: 800px;
+  
+    margin-top: 3%;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    align-content: center;
+}
+/* #button
+{
+    position: relative;
+    left:40%
+} */
+.container>.tags>p {
+    color:black;
+    position: relative;
+    right:40%;
+    margin-bottom: 7px;
+}
+
+#Io {
+    margin-top:60px;
+    margin-bottom: 10px;
+    position: relative;
+    right:20%;
+}
+
+#addElePerBody {
+    height: 800px;
+}
+#assiavailable{
+    position: relative;
+    right:32%;
+}
+
+
+#explainer{
+    height: 800px;
+    background-image:url("../Assets/Images/wiggly-lines-wave-seamless-vector-pattern.jpg");
+}
+#explainerp {
+    position: relative;
+    top:50px;
+    color:black;
+    align-items: center;
+    line-height: 25px;
+    width:250px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    size:small ;
+    /* position:relative;
+    right: 40%; */
+}
+
+
+.theformscontainers {
+    height:1000px;
+    max-width: 1920;
+    background-image: url("../Assets/Images/wiggly-lines-wave-seamless-vector-pattern.jpg");
+   
+}
+
+#enterStudents{
+    height: 800px;
+    position: relative;
+    top: 200px;
+    right:25%;
+    
+}
+#fname{
+    width :650px;
+    margin-bottom: 25px;
+    height:25px;
+    text-align: center;
+}
+#lname
+{
+    width :650px;
+    margin-bottom: 25px;
+    height:25px;
+    text-align: center;
+}
+#dob{
+    width :650px;
+    margin-bottom: 25px;
+    height:25px;
+    text-align: center;
+    margin-left: 25px;
+    display: block;
+   
+}
+#ldob{
+    margin-bottom: 10px;
+    text-align: left;
+    position:relative;
+    left: 57.6%;
+    font-weight: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: block;
+    
+}
+#tuit{
+    position: relative;
+    left: 59%;
+    height: 25px;
+    width: 650px;
+    text-align: center;
+    
+    
+}
+#saveStudent{
+    position: inherit;
+    width: 100px;
+    height: 40px;
+    background-color: rgb(34, 138, 34);
+    color: whitesmoke;
+    border-radius: 3px;
+
+}
+
+#buttonsS{
+    margin-top:40px;
+    position: relative;
+    left: 68%;
+}  
+
+#enterStudent{
+    position: inherit;
+    width: 100px;
+    height: 40px;
+    background-color: #243473;
+    color: whitesmoke;
+    border-radius: 3px;
+
+}
+#clearSForm
+{
+    position: inherit;
+    width: 100px;
+    height: 40px;
+    background-color: tomato;
+    color: whitesmoke;
+    border-radius: 3px;
+}
+/* #studentInformation{
+    height: 150px;
+
+} */
+/* #editpicture{
+    height: 1000px;
+    
+    background-image: url("../Assets/Images/wiggly-lines-wave-seamless-vector-pattern.jpg");
+} */
+
+#editImagePortion{
+    height: 1000px;
+    background-image: url("../Assets/Images/wiggly-lines-wave-seamless-vector-pattern.jpg");
+}
+#editTheWholeShebbang{
+    position: relative;
+    top: 350px;
+}
+
+#fnameE{
+    width: 650px;
+    height: 25px;
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+
+#lnameE{
+  
+    width: 650px;
+    height: 25px;
+    margin-bottom: 10px;
+    text-align: center;
+    
+}
+#dobE{
+   
+    width: 650px;
+    height: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+    
+   
+}
+#tuitE{
+    
+    width: 650px;
+    height: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+    left: 59%;
+    
+    
+}
+
+
+#enterStudentE{
+    position: relative;
+    left: 44%;
+    bottom:422px;
+    width: 100px;
+    height: 40px;
+    background-color: #243473;
+    color: whitesmoke;
+    border-radius: 3px;
+}
+
+#deleteStudent{
+    position: relative;
+    bottom: 422px;
+    left: 49.5%;
+    width: 100px;
+    height: 40px;
+    background-color:maroon;
+    color: whitesmoke;
+    border-radius: 3px;
+}
+#clearEdit{
+    position: relative;
+    left: 74.5%;
+    width: 100px;
+    height: 40px;
+    background-color:tomato;
+    color: whitesmoke;
+    border-radius: 3px;
+
+}
+#editFormStudents{
+    position: relative;
+    right: 34%;
+    width: 450px;
+    height: 20px;
+    text-align: center;
+    
+    
+}
+
+.displayInputs{
+    position: relative;
+    right: 34%;
+    width: 450px;
+    text-align: center;
+    
+}
+
+#addTrainerPicture{
+    height: 800px;
+    background-image: url("../Assets/Images/wiggly-lines-wave-seamless-vector-pattern.jpg");
+}
+
+.enterTrainersForm{
+    position: relative;
+    top: 200px;
+    right: 25%;
+    width: 650px;
+    height: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#enterTrainer{
+    position: relative;
+    top: 250px;
+    left: 40%;
+    width: 100px;
+    height: 40px;
+    background-color: #243473;
+    color: whitesmoke;
+    border-radius: 3px;
+}
+
+#saveTrainer
+{
+    position: relative;
+    top: 250px;
+    left: 42%;
+    width: 100px;
+    height: 40px;
+    background-color: rgb(34, 138, 34);
+    color: whitesmoke;
+    border-radius: 3px;
+}
+
+#resetTrainer{ position: relative;
+    top: 290px;
+    right: 4%;
+    width: 100px;
+    height: 40px;
+    background-color:tomato;
+    color: whitesmoke;
+    border-radius: 3px;
+
+}
+#headerStudent
+{
+    position: relative;
+    right: 4%;
+}
+
+#headerForEnterStudents{
+    position: relative;
+    top: 225px;
+    right: 29%;
+}
+
+#enterPictureForCourse
+{
+    height:800px;
+    background-image: url("../Assets/Images/wiggly-lines-wave-seamless-vector-pattern.jpg");
+   
+
+}
+
+.addCourse
+{
+    position: relative;
+    top: 250px;
+    width: 650px;
+    height: 20px;
+    right: 28%;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+#cStartDate{
+    width: 650px;
+    height: 20px;
+    text-align: center;
+}
+#cEndDate{
+    width: 650px;
+    height: 20px;
+    text-align: center;
+    
+}
+
+#cStartLabel{
+    position: relative;
+    top: 250px;
+    right: 28%;
+  
+}
+#cEndLabel{
+    position: relative;
+    top: 255px;
+    left: 17.6%;
+}
+
+#titleCourses
+{
+    position: relative;
+    top: 220px;
+    right: 33%;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+
+*, body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+    height: 100%;
+    background-color: #152733;
+    overflow: hidden;
+}
+
+
+.form-holder {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      min-height: 100vh;
+}
+
+.form-holder .form-content {
+    position: relative;
+    text-align: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    padding: 60px;
+}
+
+.form-content .form-items {
+    border: 3px solid #fff;
+    padding: 40px;
+    display: inline-block;
+    width: 100%;
+    min-width: 540px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    text-align: left;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.form-content h3 {
+    color: #fff;
+    text-align: left;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.form-content h3.form-title {
+    margin-bottom: 30px;
+}
+
+.form-content p {
+    color: #fff;
+    text-align: left;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+
+
+.form-content label, .was-validated .form-check-input:invalid~.form-check-label, .was-validated .form-check-input:valid~.form-check-label{
+    color: #fff;
+}
+
+.form-content input[type=text], .form-content input[type=password], .form-content input[type=email], .form-content select {
+    width: 100%;
+    padding: 9px 20px;
+    text-align: left;
+    border: 0;
+    outline: 0;
+    border-radius: 6px;
+    background-color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    color: #8D8D8D;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    margin-top: 16px;
+}
+
+
+.btn-primary{
+    background-color: #6C757D;
+    outline: none;
+    border: 0px;
+     box-shadow: none;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active{
+    background-color: #495056;
+    outline: none !important;
+    border: none !important;
+     box-shadow: none;
+}
+
+.form-content textarea {
+    position: static !important;
+    width: 100%;
+    padding: 8px 20px;
+    border-radius: 6px;
+    text-align: left;
+    background-color: #fff;
+    border: 0;
+    font-size: 15px;
+    font-weight: 300;
+    color: #8D8D8D;
+    outline: none;
+    resize: none;
+    height: 120px;
+    -webkit-transition: none;
+    transition: none;
+    margin-bottom: 14px;
+}
+
+.form-content textarea:hover, .form-content textarea:focus {
+    border: 0;
+    background-color: #ebeff8;
+    color: #8D8D8D;
+}
+
+.mv-up{
+    margin-top: -9px !important;
+    margin-bottom: 8px !important;
+}
+
+.invalid-feedback{
+    color: #ff606e;
+}
+
+.valid-feedback{
+   color: #2acc80;
+}
